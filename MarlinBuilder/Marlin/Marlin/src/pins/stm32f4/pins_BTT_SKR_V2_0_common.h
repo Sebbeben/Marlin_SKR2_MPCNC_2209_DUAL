@@ -517,8 +517,8 @@
 
 /**
  *                      -------
- *            GND | 9  |       | 8 | 3.3V
- *  (ESP-CS) PB12 | 10 |       | 7 | PB15 (ESP-MOSI)
+ *            GND | 9  |       | 8 | 3.3V                 (ESP-RX) PD8 and (ESP-TX) PD9 could be able to send MODBUS Commands to example an Frequency inverter
+ *  (ESP-CS) PB12 | 10 |       | 7 | PB15 (ESP-MOSI)      for controlling spindle ON/OFF, SPEED, FORWARD/REVERSE
  *           3.3V | 11 |       | 6 | PB14 (ESP-MISO)
  * (ESP-IO0) PB10 | 12 |       | 5 | PB13 (ESP-CLK)
  * (ESP-IO4) PB11 | 13 |       | 4 | NC
