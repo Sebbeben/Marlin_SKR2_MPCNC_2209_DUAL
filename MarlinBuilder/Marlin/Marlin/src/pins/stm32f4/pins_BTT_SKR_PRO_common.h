@@ -51,6 +51,14 @@
 #define HAS_OTG_USB_HOST_SUPPORT
 
 //
+// CNC SETTINGS
+//
+
+#define SPINDLE_LASER_ENA_PIN    PB6   // digital pin
+#define SPINDLE_LASER_PWM_PIN    PB5   // digital pin - MUST BE HARDWARE PWM //WORKS! need to get down speed to 0-10v in some way
+#define SPINDLE_DIR_PIN          PB7   // digital pin // powersupply voltage ON/OFF
+
+//
 // Servos
 //
 #define SERVO0_PIN                          PA1
@@ -244,9 +252,9 @@
 #define HEATER_1_PIN                        PD14  // Heater1
 #define HEATER_2_PIN                        PB0   // Heater1
 #define HEATER_BED_PIN                      PD12  // Hotbed
-#define FAN_PIN                             PC8   // Fan0
-#define FAN1_PIN                            PE5   // Fan1
-#define FAN2_PIN                            PE6   // Fan2
+//#define FAN_PIN                             PB7   // Fan0
+//#define FAN1_PIN                            PE5   // Fan1
+//#define FAN2_PIN                            PE6   // Fan2
 
 #ifndef E0_AUTO_FAN_PIN
   #define E0_AUTO_FAN_PIN               FAN1_PIN
